@@ -10,6 +10,17 @@
     tools:context=".SplashScreen"
     android:background="@color/white">
 
+    <TextView
+        android:id="@+id/KULA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/oregano"
+        android:text="KULA"
+        android:textColor="#3d33a8"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="300dp"

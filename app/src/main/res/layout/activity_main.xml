@@ -94,15 +94,16 @@
         android:id="@+id/others"
         android:text="or sign in with"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/forgotpass"
+        app:layout_constraintBottom_toBottomOf="@+id/other"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="100dp"/>
+       android:layout_marginBottom="100dp"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/other"
         app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center" >
 
