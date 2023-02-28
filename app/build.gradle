@@ -27,6 +27,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding true;
+    }
 }
 
 dependencies {
@@ -41,4 +44,8 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:4.2.2'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.github.qamarelsafadi:CurvedBottomNavigation:0.1.0'
 }
+apply plugin: 'com.google.gms.google-services'

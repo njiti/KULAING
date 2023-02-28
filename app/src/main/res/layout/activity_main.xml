@@ -42,7 +42,7 @@
         app:civ_border_width="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signin"
-        android:background="#30ffff"
+        android:background="@drawable/rectangle"
         android:layout_marginTop="30dp"
         android:layout_margin="20dp"
         android:padding="20dp"
@@ -59,7 +59,7 @@
         app:civ_border_width="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/name"
-        android:background="#30ffff"
+        android:background="@drawable/rectangle"
         android:layout_margin="20dp"
         android:layout_marginTop="70dp"
         android:padding="20dp"
@@ -72,9 +72,20 @@
         android:id="@+id/loginbtn"
         app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="LOGIN"
+        android:text="SignIn"
         android:backgroundTint="@color/teal_200"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signout"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintStart_toEndOf="@+id/loginbtn"
+        android:text="SignUP"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp" />
 
     <TextView
@@ -83,7 +94,7 @@
         android:id="@+id/forgotpass"
         app:layout_constraintTop_toBottomOf="@+id/loginbtn"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Forgot password"
+        android:text=""
         android:textColor="@color/black"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp" />
@@ -94,44 +105,19 @@
         android:id="@+id/others"
         android:text="or sign in with"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/other"
+        app:layout_constraintTop_toBottomOf="@+id/forgotpass"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="150dp"
        android:layout_marginBottom="100dp"/>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/other"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:gravity="center" >
-
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/google"
-            android:layout_margin="20dp"
-            android:src="@drawable/google"
-            android:background="@color/white"/>
-
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/facebook"
-            android:layout_margin="20dp"
-            android:src="@drawable/facebook"
-            android:background="@color/white"/>
-
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/twitter"
-            android:layout_margin="20dp"
-            android:src="@drawable/twitter"
-            android:background="@color/white"/>
-
-    </LinearLayout>
+        android:id="@+id/google"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/others"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"/>
 
 
 
