@@ -1,9 +1,12 @@
-package com.example.testkula;
+package com.example.testkula.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.testkula.MainActivity;
+import com.example.testkula.R;
 
 public class SplashScreen extends AppCompatActivity {
 

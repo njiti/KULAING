@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotificationFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.NotificationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Notification Fragment"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:gravity="center" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="330dp"
+        app:backgroundTint="@color/orange"
+        android:src="@drawable/baseline_add"
+        android:tint="@color/white" />
 
 </FrameLayout>

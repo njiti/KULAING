@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".SplashScreen"
+    tools:context=".UI.SplashScreen"
     android:background="@color/white">
 
     <TextView
@@ -34,7 +34,8 @@
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:indeterminateTint="@color/orange" />
 
     <TextView
         android:layout_width="match_parent"

@@ -4,44 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment">
+    tools:context=".User.HomeFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/advert"
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+       android:id="@+id/carousel"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        app:cardElevation="50dp"
-        app:cardCornerRadius="15dp">
+        android:layout_marginEnd="10dp"
+        app:circularflow_defaultRadius="100dp"
+        app:showNavigationButtons="false"
+        app:showCaption="false"
+        app:imageScaleType="fitXY"
+        app:autoPlay="true"
+        app:carouselBackground="@color/purple_700"
+        app:touchToPause="true" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/chapo"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chapo"
-            android:textStyle="bold"
-            android:textSize="40dp"
-            android:textColor="@color/orange"
-            android:layout_marginLeft="240dp"
-            android:layout_marginTop="10dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="10/="
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:textColor="@color/orange"
-            android:layout_marginLeft="290dp"
-            android:layout_marginTop="60dp" />
-
-    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
